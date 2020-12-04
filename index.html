@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title> COVID-19 </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title"> COVID-19 <span style="color:#ad5b03">LIVE STATISTICS</h1>
+    <img src="image/covid.gif" alt="" width="500" height="300"  class="center">
+    <br>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th> TOTAL INFECTED</th>
+          <th> TOTAL DEATHS</th>
+          <th> TOTAL RECOVERED</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="data">
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <button onclick="refreshData()"class="button">Refresh Data
+    </button>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="covid.js"></script>
+
+</html>
